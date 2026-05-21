@@ -27,25 +27,25 @@ By using a two-stage local pipeline, we can see exactly where the semantic chain
 
 ### 2. Heart’s House (`results/heart_house.PNG`)
 * **Doodle:** A house with a red roof and a big heart on the wall, alongside a green tree and a red sun.
-* **AI Interpretation:** `house, sun, tree, red heart, green leaves, clear s...`
+* **AI Interpretation:** `house, sun, tree, red heart, green leaves`
 * **The Failure:** The sun, house shape, and tree translated beautifully. However, the heart *on the wall* of the house was omitted in the rendering, as the model struggled with the spatial hierarchy of placing one subject inside another.
 ![Heart House](results/heart_house.PNG)
 
 ### 3. Mountain & Sea (`results/moutain_sea.png`)
 * **Doodle:** Green mountains with a red sun over blue water, containing a simple yellow boat sketch.
-* **AI Interpretation:** `green mountains, blue water, yellow boat, white cl...`
+* **AI Interpretation:** `green mountains, blue water, yellow boat.`
 * **The Success:** This landscape translated highly successfully! By mapping the simple color fields (green top, blue bottom), the model cleanly separated the mountain range from the water, converting the crude yellow lines into stylized sailing vessels. It sill misses the sun but adds more boats.
 ![Mountain Sea](results/moutain_sea.png)
 
 ### 4. Spartan Warrior (`results/soldier.PNG`)
 * **Doodle:** A stick-figure soldier wearing a helmet with a red plume, holding a sword.
-* **AI Interpretation:** `main subject: spartan soldier, colors: black and w...`
+* **AI Interpretation:** `main subject: spartan soldier, colors: black and white.`
 * **The Failure:** LLaVA understood the general theme but misclassified the weapon's details. As a result, Stable Diffusion rendered the sword as a highly stylized futuristic armor blade, diverging from the traditional look sketched.
 ![Spartan Warrior](results/soldier.PNG)
 
 ### 5. Girl with the Balloon (`results/girl_baloon.PNG`)
 * **Doodle:** A stick figure of a girl with yellow hair holding a string attached to a red balloon.
-* **AI Interpretation:** `girl, cartoon, cheerleader, red ball, yellow hair,...`
+* **AI Interpretation:** `girl, cartoon, cheerleader, red ball, yellow hair`
 * **The Failure (Classic semantic shift):** Because the balloon was drawn somewhat roundly, LLaVA hallucinated it as a "red ball" and labeled the girl a "cheerleader". Because of this one-word translation shift, Stable Diffusion drew a cheerleader dynamically holding a heavy red bowling-ball-like sphere instead of a balloon.
 ![Girl with Balloon](results/girl_baloon.PNG)
 
