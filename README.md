@@ -34,7 +34,7 @@ By using a two-stage local pipeline, we can see exactly where the semantic chain
 ### 3. Mountain & Sea (`results/moutain_sea.png`)
 * **Doodle:** Green mountains with a red sun over blue water, containing a simple yellow boat sketch.
 * **AI Interpretation:** `green mountains, blue water, yellow boat, white cl...`
-* **The Success:** This landscape translated highly successfully! By mapping the simple color fields (green top, blue bottom), the model cleanly separated the mountain range from the water, converting the crude yellow lines into stylized sailing vessels.
+* **The Success:** This landscape translated highly successfully! By mapping the simple color fields (green top, blue bottom), the model cleanly separated the mountain range from the water, converting the crude yellow lines into stylized sailing vessels. It sill misses the sun but adds more boats.
 ![Mountain Sea](results/moutain_sea.png)
 
 ### 4. Spartan Warrior (`results/soldier.PNG`)
